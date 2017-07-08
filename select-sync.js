@@ -1,5 +1,4 @@
 ;((container,maxItemNumber)=>{
-
     if(container){
 
         let _=container;
@@ -50,4 +49,4 @@
         console.error('Container with id="#select-sync" not found. Try to correct or html or given id.');
     }
 
-})(document.querySelector('#select-sync'),6);
+})(document.querySelector('#select-sync'), 6);
