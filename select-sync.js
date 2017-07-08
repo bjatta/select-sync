@@ -29,8 +29,8 @@
 
         document.addEventListener("DOMContentLoaded", e=>{
 
-            firstSelect = _.querySelector('select');
-            firstSelect.addEventListener('change',selectListChecker);
+            firstSelect = _.querySelector('div.select-wrapper');
+            firstSelect.firstElementChild.addEventListener('change',selectListChecker);
             _.querySelector('#select-sync-button').addEventListener('click',e=>{
 
                 if (_.querySelectorAll('select').length<maxItemNumber) {
@@ -38,6 +38,7 @@
 
                     _.insertBefore(clonedElement, _.lastChild);
                     clonedElement.addEventListener('change',selectListChecker);
+                    selectListChecker();
                 }else{
                     __('Max number of items : '+maxItemNumber+' are reached!');
                 }

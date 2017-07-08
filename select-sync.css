@@ -1,7 +1,23 @@
+body * {
+    box-sizing: border-box;
+}
 #select-sync.select-sync-container {
     display: flex; /* or inline-flex */
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    align-content: center;
+}
+#select-sync div.select-wrapper{
+    padding: 0.1em;
+}
+#select-sync{
+    max-width: 95vw;
+}
+#select-sync>div.select-wrapper{
+    max-width: 15%;
+}
+#select-sync div.select-wrapper select{
+    width: 99%;
 }
