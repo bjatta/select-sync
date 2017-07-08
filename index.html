@@ -2,30 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
     <link rel="stylesheet" type="text/css" href="select-sync.css">
-
     <title>select sync maddness</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div id="select-sync" class="select-sync-container">
-                <button id="select-sync-button">+</button>
-                <div class="select-wrapper">
-                    <select name="selection[]">
-                        <option value="" disabled selected hidden>Select attribute...</option>
-                        <option value="403">403 option</option>
-                        <option value="404">404 option</option>
-                        <option value="405">405 option</option>
-                        <option value="406">406 option</option>
-                        <option value="407">407 option</option>
-                        <option value="408">408 option</option>
-                        <option value="409">409 option</option>
-                        <option value="410">410 option</option>
-                        <option value="411">411 option</option>
-                        <option value="412">412 option</option>
-                    </select>
-                </div>
+    <div class="container-fluid">
+        <div id="select-sync" class="select-sync-container">
+            <button id="select-sync-button">+</button>
+            <div class="select-flex-container">
+                <select  class="custom-select" name="selection[]" style="width: 100%">
+                    <option value="" disabled selected hidden>Select attribute...</option>
+                    <option value="403">403 option</option>
+                    <option value="404">404 option</option>
+                    <option value="405">405 option</option>
+                    <option value="406">406 option</option>
+                    <option value="407">407 option</option>
+                    <option value="408">408 option</option>
+                    <option value="409">409 option</option>
+                    <option value="410">410 option</option>
+                    <option value="411">411 option</option>
+                    <option value="412">412 option</option>
+                </select>
             </div>
         </div>
     </div>

@@ -2,22 +2,39 @@ body * {
     box-sizing: border-box;
 }
 #select-sync.select-sync-container {
-    display: flex; /* or inline-flex */
+    display: inline-flex;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+}
+#select-sync .select-flex-container {
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
+    width: calc(100% - 2.3em);
+    margin: auto;
 }
-#select-sync div.select-wrapper{
-    padding: 0.1em;
+#select-sync .custom-select {
+    display: inline-block;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.25;
+    color: #464a4c;
+    vertical-align: middle;
+    background: #fff url(double-arrow.svg) no-repeat right .75rem center;
+    -webkit-background-size: 8px 10px;
+    background-size: 8px 10px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-size: 1.1em;
+    margin: 0.1em;
 }
-#select-sync{
-    max-width: 95vw;
-}
-#select-sync>div.select-wrapper{
-    max-width: 15%;
-}
-#select-sync div.select-wrapper select{
-    width: 99%;
+#select-sync button{
+    font-size: 1.5em;
+    height: calc(2.15rem + 2px);
 }
